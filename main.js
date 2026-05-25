@@ -187,7 +187,7 @@ if (form && status) {
     status.style.display = 'none';
 
     // ↓ Replace YOUR_FORM_ID with your Formspree form ID
-  const ENDPOINT = 'https://pixsyn-backend-production.up.railway.app/api/contact-lead'
+ const ENDPOINT = 'https://pixsyn-backend-production.up.railway.app/api/contact-lead';
 
 try {
   const data = {
