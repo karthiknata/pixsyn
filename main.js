@@ -30,35 +30,6 @@ if (themeToggle) {
   });
 }
 
-/* ── CURSOR ──────────────────────────────────────── */
-const cursor = document.getElementById('cursor');
-const isFine = window.matchMedia('(pointer: fine)').matches;
-
-if (cursor && isFine) {
-  let mx = -200, my = -200, cx = -200, cy = -200, raf;
-
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-
-  (function loop() {
-    cx += (mx - cx) * 0.13;
-    cy += (my - cy) * 0.13;
-    cursor.style.transform = `translate(${cx}px,${cy}px) translate(-50%,-50%)`;
-    raf = requestAnimationFrame(loop);
-  })();
-
-  document.querySelectorAll('a,button,.srv-row,.why-card,.pricing-card,.process-card,input,select,textarea')
-    .forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('big'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
-    });
-
-  document.addEventListener('mousedown', () => cursor.classList.add('small'));
-  document.addEventListener('mouseup',   () => cursor.classList.remove('small'));
-} else if (cursor) {
-  cursor.style.display = 'none';
-  document.body.style.cursor = 'auto';
-}
-
 /* ── MOBILE MENU ─────────────────────────────────── */
 const hamburger  = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -257,7 +228,7 @@ try {
 // Requires pixsyn-backend running on localhost:3001
 
 (function () {
-  const ACCENT = '#00539c';
+  const ACCENT = '#000000';
   const BACKEND = 'http://localhost:3001';
 
   // Conversation history sent to Claude
