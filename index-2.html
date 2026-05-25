@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixsyn — Websites, SEO & AI for Saskatchewan Businesses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <!-- ── NAV ── -->
+  <header class="nav-wrap">
+    <div class="container">
+      <nav class="nav">
+        <a href="#top" class="logo">
+           <img src="logo.png" alt="PixSyn logo" class="logo-mark">
+          <span class="logo-text">PixSyn</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-click" id="themeToggle" type="button" aria-label="Switch to night mode">
+            <span id="themeText">☾</span>
+          </button>
+
+          <a href="#contact" class="nav-cta">Book a Free Call</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+
+      <!-- scrolling ticker at top -->
+      <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Web Design</span><span class="bull">&bull;</span>
+          <span>Local SEO</span><span class="bull">&bull;</span>
+          <span>AI Receptionist</span><span class="bull">&bull;</span>
+          <span>Automation</span><span class="bull">&bull;</span>
+          <span>AI Chatbot</span><span class="bull">&bull;</span>
+          <span>Growth Systems</span><span class="bull">&bull;</span>
+          <span>Web Design</span><span class="bull">&bull;</span>
+          <span>Local SEO</span><span class="bull">&bull;</span>
+          <span>AI Receptionist</span><span class="bull">&bull;</span>
+          <span>Automation</span><span class="bull">&bull;</span>
+          <span>AI Chatbot</span><span class="bull">&bull;</span>
+          <span>Growth Systems</span><span class="bull">&bull;</span>
+        </div>
+      </div>
+
+      <!-- giant watermark -->
+      <div class="hero-watermark" aria-hidden="true">PIXSYN</div>
+
+      <div class="container hero-body">
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            Saskatchewan's premium automation agency
+          </div>
+
+          <h1 class="hero-title">
+            <span class="ht-line">WE BUILD</span>
+            <span class="ht-line ht-italic"><em>digital</em></span>
+            <span class="ht-line">MACHINES.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Websites that convert. SEO that ranks. AI that never sleeps.<br>
+            Pixsyn helps Saskatchewan service businesses look premium, get found,
+            and respond to leads faster — without adding more work to your team.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">Get your free roadmap &rarr;</a>
+            <a href="#services" class="btn-ghost">Explore services</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="info-card">
+            <div class="ic-label">Currently accepting</div>
+            <div class="ic-status">
+              <span class="live-dot"></span> New clients — 2025
+            </div>
+            <hr class="ic-rule" />
+            <div class="ic-row"><span>Avg. website delivery</span><strong>14 days</strong></div>
+            <div class="ic-row"><span>AI lead coverage</span><strong>24 / 7</strong></div>
+            <div class="ic-row"><span>Location</span><strong>Saskatchewan</strong></div>
+            <div class="ic-row"><span>Services offered</span><strong>5 core</strong></div>
+            <hr class="ic-rule" />
+            <div class="ic-tagline">Premium execution. Real results.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- stats bar -->
+      <div class="hero-stats">
+        <div class="container stats-inner">
+          <div class="stat">
+            <strong class="stat-num" data-count="14">0+</strong>
+            <span class="stat-lbl">Day website delivery</span>
+          </div>
+          <div class="stat">
+            <strong class="stat-num" data-count="24">0+</strong>
+            <span class="stat-lbl">Hour AI lead coverage</span>
+          </div>
+          <div class="stat">
+            <strong class="stat-num" data-count="5">0+</strong>
+            <span class="stat-lbl">Core services</span>
+          </div>
+          <div class="stat">
+            <strong class="stat-num" data-count="100">0+</strong>
+            <span class="stat-lbl">% Saskatchewan focused</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ORANGE MARQUEE ── -->
+    <div class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Web Design</span><span class="mdot">&#10022;</span>
+        <span>Local SEO</span><span class="mdot">&#10022;</span>
+        <span>AI Systems</span><span class="mdot">&#10022;</span>
+        <span>Automation</span><span class="mdot">&#10022;</span>
+        <span>Lead Capture</span><span class="mdot">&#10022;</span>
+        <span>Growth Strategy</span><span class="mdot">&#10022;</span>
+        <span>Web Design</span><span class="mdot">&#10022;</span>
+        <span>Local SEO</span><span class="mdot">&#10022;</span>
+        <span>AI Systems</span><span class="mdot">&#10022;</span>
+        <span>Automation</span><span class="mdot">&#10022;</span>
+        <span>Lead Capture</span><span class="mdot">&#10022;</span>
+        <span>Growth Strategy</span><span class="mdot">&#10022;</span>
+      </div>
+    </div>
+
+    <!-- ── SERVICES ── -->
+    <section class="section" id="services">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Services</div>
+            <h2 class="section-title">WHAT WE<br>BUILD FOR YOU</h2>
+          </div>
+          <p class="section-desc">
+            Five precision services that work together as one system — designed to make
+            your business look sharper, rank higher, and respond to leads faster than your competition.
+          </p>
+        </div>
+
+        <div class="srv-list">
+
+          <div class="srv-row js-reveal">
+            <div class="srv-num">01</div>
+            <div class="srv-info">
+              <div class="srv-name">Website Design</div>
+              <p class="srv-desc">
+                Premium Webflow or WordPress websites built to position your business clearly,
+                load fast, and convert serious buyers. Every page is structured around your offer,
+                your ideal client, and one goal: getting them to reach out.
+              </p>
+              <div class="srv-tags">
+                <span class="tag">Webflow</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">14-Day Launch Guarantee</span>
+                <span class="tag">Conversion-First Design</span>
+                <span class="tag">Mobile Optimised</span>
+              </div>
+            </div>
+            <div class="srv-meta">
+              <div class="srv-meta-item"><strong>One-time build</strong><span>Scoped per project</span></div>
+              <div class="srv-meta-item"><strong>14 days</strong><span>Guaranteed launch</span></div>
+            </div>
+            <div class="srv-arrow">&nearr;</div>
+          </div>
+
+          <div class="srv-row js-reveal">
+            <div class="srv-num">02</div>
+            <div class="srv-info">
+              <div class="srv-name">Local SEO</div>
+              <p class="srv-desc">
+                Monthly SEO retainers laser-focused on ranking in your service area, improving
+                Google Maps visibility, and turning local search traffic into calls and booked
+                appointments — not just clicks.
+              </p>
+              <div class="srv-tags">
+                <span class="tag">Google Maps Ranking</span>
+                <span class="tag">On-Page SEO</span>
+                <span class="tag">Content Strategy</span>
+                <span class="tag">Monthly Reporting</span>
+                <span class="tag">Local Intent</span>
+              </div>
+            </div>
+            <div class="srv-meta">
+              <div class="srv-meta-item"><strong>Monthly retainer</strong><span>Ongoing growth</span></div>
+              <div class="srv-meta-item"><strong>Local intent</strong><span>Maps, on-page, content</span></div>
+            </div>
+            <div class="srv-arrow">&nearr;</div>
+          </div>
+
+          <div class="srv-row js-reveal">
+            <div class="srv-num">03</div>
+            <div class="srv-info">
+              <div class="srv-name">AI Receptionist</div>
+              <p class="srv-desc">
+                A 24/7 voice and chat agent that handles common questions, captures leads,
+                qualifies inquiries, and routes people to the right place — even after your
+                team signs off for the day. Never miss a lead again.
+              </p>
+              <div class="srv-tags">
+                <span class="tag">Voice AI</span>
+                <span class="tag">24/7 Coverage</span>
+                <span class="tag">Lead Capture</span>
+                <span class="tag">After-Hours Answering</span>
+                <span class="tag">Intelligent Routing</span>
+              </div>
+            </div>
+            <div class="srv-meta">
+              <div class="srv-meta-item"><strong>Setup + usage</strong><span>Scoped per need</span></div>
+              <div class="srv-meta-item"><strong>24/7</strong><span>After-hours coverage</span></div>
+            </div>
+            <div class="srv-arrow">&nearr;</div>
+          </div>
+
+          <div class="srv-row js-reveal">
+            <div class="srv-num">04</div>
+            <div class="srv-info">
+              <div class="srv-name">AI Website Chatbot</div>
+              <p class="srv-desc">
+                An embedded lead capture agent trained on your offer, pricing logic, and FAQs —
+                so visitors get real answers instantly and your team receives cleaner, warmer
+                handoffs instead of cold, vague enquiries.
+              </p>
+              <div class="srv-tags">
+                <span class="tag">On-Site Chat</span>
+                <span class="tag">Custom Trained</span>
+                <span class="tag">Lead Qualification</span>
+                <span class="tag">Always-On</span>
+                <span class="tag">CRM Handoff</span>
+              </div>
+            </div>
+            <div class="srv-meta">
+              <div class="srv-meta-item"><strong>Setup + support</strong><span>Ongoing refinement</span></div>
+              <div class="srv-meta-item"><strong>On-site</strong><span>Always-on capture</span></div>
+            </div>
+            <div class="srv-arrow">&nearr;</div>
+          </div>
+
+          <div class="srv-row js-reveal">
+            <div class="srv-num">05</div>
+            <div class="srv-info">
+              <div class="srv-name">AI Workflow Automation</div>
+              <p class="srv-desc">
+                Custom automations for intake, follow-up, quoting, scheduling, notifications,
+                and internal ops. Stop relying on slow manual handoffs and start running a
+                business that moves at the speed your clients expect.
+              </p>
+              <div class="srv-tags">
+                <span class="tag">Make / Zapier</span>
+                <span class="tag">CRM Integrations</span>
+                <span class="tag">Auto Follow-Up</span>
+                <span class="tag">Scheduling Flows</span>
+                <span class="tag">Custom-Built</span>
+              </div>
+            </div>
+            <div class="srv-meta">
+              <div class="srv-meta-item"><strong>Scoped per workflow</strong><span>Built around your stack</span></div>
+              <div class="srv-meta-item"><strong>Custom</strong><span>Your tools, connected</span></div>
+            </div>
+            <div class="srv-arrow">&nearr;</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY PIXSYN ── -->
+    <section class="section why-section" id="why">
+      <div class="container">
+        <div class="eyebrow">Why Pixsyn</div>
+        <h2 class="section-title">BUILT<br>DIFFERENT.</h2>
+        <p class="section-desc why-desc">
+          You are not hiring a random freelancer from a job board. You are partnering with a focused
+          digital systems team that understands positioning, trust, sales flow, and operational leverage
+          — and builds accordingly.
+        </p>
+
+        <div class="why-grid">
+          <div class="why-card js-reveal">
+            <div class="why-num">01</div>
+            <h3>Senior-led, strategy-first</h3>
+            <p>
+              You work with people who think in outcomes — not just pages and plugins.
+              Every recommendation is tied to lead quality, conversion speed, and real business capacity.
+              No junior handoffs. No vague agency back-and-forth.
+            </p>
+          </div>
+          <div class="why-card js-reveal">
+            <div class="why-num">02</div>
+            <h3>Fast without feeling rushed</h3>
+            <p>
+              Our process is intentionally tight. Website projects move quickly because scope,
+              messaging, and delivery are structured for momentum from day one. You'll know
+              exactly what's happening and when.
+            </p>
+          </div>
+          <div class="why-card js-reveal">
+            <div class="why-num">03</div>
+            <h3>AI that solves real problems</h3>
+            <p>
+              We deploy AI where it removes actual friction: answering common questions,
+              qualifying leads, routing data, and cutting the repetitive admin work
+              that slows your team down every single day.
+            </p>
+          </div>
+          <div class="why-card js-reveal">
+            <div class="why-num">04</div>
+            <h3>Saskatchewan roots, national standard</h3>
+            <p>
+              Based locally, we understand what regional operators face — and we deliver
+              digital work that feels modern enough to compete with top-tier national brands,
+              without the bloated agency overhead.
+            </p>
+          </div>
+        </div>
+
+        <!-- proof strip -->
+        <div class="proof-strip js-reveal">
+          <div class="proof-item">
+            <strong>14 days</strong>
+            <span>Average website delivery from kickoff to launch</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>24/7</strong>
+            <span>AI coverage so you never miss a lead after hours</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>5 services</strong>
+            <span>Designed to work as one connected growth system</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>1 team</strong>
+            <span>Senior-led execution from strategy through to launch</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── AI SHOWCASE ── -->
+    <section class="section ai-section" id="ai">
+      <div class="container">
+        <div class="ai-grid">
+          <div class="ai-copy">
+            <div class="eyebrow">AI Showcase</div>
+            <h2 class="section-title">AI SHOULD MAKE<br>YOUR BUSINESS<br><em>FEEL FASTER.</em></h2>
+            <p>
+              Our AI systems are designed for real-world service businesses —
+              not tech demos. That means handling missed calls, qualifying leads
+              from your website, routing information to the right place, and
+              automating the repetitive steps your team does every single day.
+            </p>
+            <ul class="ai-points">
+              <li>
+                <span class="ai-dot"></span>
+                Voice and chat agents that capture demand when your team is busy or offline
+              </li>
+              <li>
+                <span class="ai-dot"></span>
+                Website chat trained on your services, availability, and qualification flow
+              </li>
+              <li>
+                <span class="ai-dot"></span>
+                Workflow automations connecting your forms, inbox, CRM, and follow-up actions
+              </li>
+              <li>
+                <span class="ai-dot"></span>
+                Custom-built around your stack — not generic plug-and-play tools
+              </li>
+            </ul>
+            <a href="#contact" class="btn-primary" style="margin-top:2rem">Plan my AI stack &rarr;</a>
+          </div>
+
+          <div class="ai-visual js-reveal">
+            <div class="ai-card">
+              <div class="ai-card-header">
+                <span class="ai-card-dot red"></span>
+                <span class="ai-card-dot amber"></span>
+                <span class="ai-card-dot green"></span>
+                <span class="ai-card-title">AI Receptionist — Live</span>
+              </div>
+              <div class="ai-chat">
+                <div class="chat-msg bot">
+                  Hi! I'm the Pixsyn AI receptionist. How can I help you today?
+                </div>
+                <div class="chat-msg user">
+                  Do you offer website design for plumbing companies?
+                </div>
+                <div class="chat-msg bot">
+                  Absolutely — we specialise in service businesses like plumbing, HVAC,
+                  and trades. We build fast, conversion-focused sites in 14 days.
+                  Would you like to book a free strategy call?
+                </div>
+                <div class="chat-msg user">
+                  Yes, what does it cost?
+                </div>
+                <div class="chat-msg bot typing" id="typingMsg">
+                  <span class="typing-dot"></span>
+                  <span class="typing-dot"></span>
+                  <span class="typing-dot"></span>
+                </div>
+              </div>
+              <div class="ai-card-footer">
+                <input type="text" placeholder="Type a message..." readonly />
+                <button class="ai-send">Send</button>
+              </div>
+            </div>
+
+            <div class="ai-stats-row">
+              <div class="ai-stat">
+                <strong>0.8s</strong>
+                <span>Avg. response time</span>
+              </div>
+              <div class="ai-stat">
+                <strong>24/7</strong>
+                <span>Always available</span>
+              </div>
+              <div class="ai-stat">
+                <strong>100%</strong>
+                <span>Custom trained</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESS ── -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="eyebrow">How It Works</div>
+        <h2 class="section-title">FOUR STEPS.<br>REAL MOMENTUM.</h2>
+        <p class="section-desc">
+          We keep every engagement structured and direct so your business gets movement,
+          not endless rounds of vague agency back-and-forth.
+        </p>
+
+        <div class="process-grid">
+          <div class="process-card js-reveal">
+            <div class="process-num">01</div>
+            <div class="process-accent"></div>
+            <h3>Strategy Call</h3>
+            <p>
+              We look at your current website, offer, sales bottlenecks, and operational
+              gaps to identify the highest-leverage move first. No generic advice —
+              everything is specific to your business.
+            </p>
+          </div>
+          <div class="process-card js-reveal">
+            <div class="process-num">02</div>
+            <div class="process-accent"></div>
+            <h3>Roadmap &amp; Scope</h3>
+            <p>
+              You get a defined plan, project scope, timeline, and pricing so you know
+              exactly what we are building, why it matters, and when you'll have it live.
+              Zero surprises.
+            </p>
+          </div>
+          <div class="process-card js-reveal">
+            <div class="process-num">03</div>
+            <div class="process-accent"></div>
+            <h3>Build &amp; Integrate</h3>
+            <p>
+              We design, write, build, and connect all the pieces so your public-facing
+              experience and internal workflow support the same business goal — from
+              first impression to follow-up.
+            </p>
+          </div>
+          <div class="process-card js-reveal">
+            <div class="process-num">04</div>
+            <div class="process-accent"></div>
+            <h3>Launch &amp; Optimise</h3>
+            <p>
+              After launch we tune performance, improve messaging, and refine the AI logic
+              using real conversations, real traffic, and real business data. We don't
+              disappear after go-live.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRICING ── -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="eyebrow">Pricing</div>
+        <h2 class="section-title">CHOOSE YOUR<br>GROWTH STAGE</h2>
+        <p class="section-desc">
+          Start with a high-conversion website, bundle in visibility and lead capture,
+          or build the full AI-powered system that supports both acquisition and operations.
+        </p>
+
+        <div class="pricing-grid">
+
+          <div class="pricing-card js-reveal">
+            <div class="pc-plan">Starter</div>
+            <div class="pc-price">Let's Talk</div>
+            <p class="pc-desc">Best for businesses that need a professional online presence and a fast, clean launch.</p>
+            <ul class="pc-list">
+              <li>Custom website design &amp; build</li>
+              <li>Webflow or WordPress delivery</li>
+              <li>14-day launch guarantee</li>
+              <li>Conversion-focused pages &amp; CTA structure</li>
+              <li>Analytics setup &amp; SEO foundations</li>
+              <li>Mobile-first responsive design</li>
+            </ul>
+            <a href="#contact" class="btn-ghost pc-btn">Start with a website &rarr;</a>
+          </div>
+
+          <div class="pricing-card featured js-reveal">
+            <div class="pc-badge">Most Popular</div>
+            <div class="pc-plan">Full-Stack Bundle</div>
+            <div class="pc-price">Let's Talk</div>
+            <p class="pc-desc">For service businesses that want a stronger site, better rankings, and instant lead capture.</p>
+            <ul class="pc-list">
+              <li>Premium website build</li>
+              <li>Local SEO setup &amp; monthly growth plan</li>
+              <li>Embedded AI chatbot for lead qualification</li>
+              <li>Basic follow-up automation</li>
+              <li>Ongoing optimisation &amp; monthly reporting</li>
+              <li>Priority support &amp; direct access</li>
+            </ul>
+            <a href="#contact" class="btn-dark pc-btn">Book the bundle &rarr;</a>
+          </div>
+
+          <div class="pricing-card js-reveal">
+            <div class="pc-plan">AI Power</div>
+            <div class="pc-price">Let's Talk</div>
+            <p class="pc-desc">For teams ready to automate response, streamline operations, and scale without more admin overhead.</p>
+            <ul class="pc-list">
+              <li>Website, chatbot &amp; AI receptionist rollout</li>
+              <li>Custom AI workflow automation</li>
+              <li>CRM &amp; scheduling integrations</li>
+              <li>Conversation logic &amp; routing setup</li>
+              <li>Testing, refinement &amp; ongoing support</li>
+              <li>Full system documentation &amp; handover</li>
+            </ul>
+            <a href="#contact" class="btn-ghost pc-btn">Plan my AI stack &rarr;</a>
+          </div>
+
+        </div>
+
+        <div class="pricing-note">
+          All pricing is scoped after a free strategy call — no generic packages, no surprises.
+          We'll recommend only what actually makes sense for your business stage.
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-left">
+            <div class="eyebrow">Get In Touch</div>
+            <h2 class="contact-title">
+              LET'S BUILD<br><em>something</em><br>GREAT.
+            </h2>
+            <p class="contact-sub">
+              Whether you need a better website, stronger local visibility, or AI systems that
+              help your business respond and operate faster — we can help you map the right next move.
+            </p>
+            <ul class="contact-points">
+              <li>Based in Saskatchewan, built for ambitious Canadian service businesses</li>
+              <li>Fast scopes, direct communication, and premium execution</li>
+              <li>Ideal for contractors, clinics, professional firms &amp; growth-minded operators</li>
+              <li>We reply with fit, next steps, and a recommended scope within one business day</li>
+            </ul>
+          </div>
+
+          <div class="contact-right">
+            <form id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="field">
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="name" placeholder="Your full name" required />
+                </div>
+                <div class="field">
+                  <label for="fbusiness">Business Name</label>
+                  <input type="text" id="fbusiness" name="business" placeholder="Your business name" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="femail">Email Address</label>
+                  <input type="email" id="femail" name="email" placeholder="you@yourbusiness.com" required />
+                </div>
+                <div class="field">
+                  <label for="fphone">Phone Number</label>
+                  <input type="tel" id="fphone" name="phone" placeholder="(306) 555-0100" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="fservice">Service You're Interested In</label>
+                <select id="fservice" name="service" required>
+                  <option value="">Select a service...</option>
+                  <option>Website Design</option>
+                  <option>Local SEO</option>
+                  <option>AI Receptionist</option>
+                  <option>AI Website Chatbot</option>
+                  <option>AI Workflow Automation</option>
+                  <option>Full-Stack Bundle</option>
+                  <option>Not sure yet — need advice</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="fmessage">Tell Us About Your Project</label>
+                <textarea id="fmessage" name="message" rows="5"
+                  placeholder="What are you trying to improve right now, and what would a strong result look like for your business?" required></textarea>
+              </div>
+              <div class="form-status" id="formStatus"></div>
+              <button type="submit" class="btn-primary submit-btn">
+                Send Inquiry &rarr;
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="pix">PIX</span><span class="syn">SYN</span>
+        </div>
+        <p>Premium websites, SEO and AI systems.<br>Saskatchewan, Canada.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-copy">
+        &copy; <span id="fyear"></span> Pixsyn. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
