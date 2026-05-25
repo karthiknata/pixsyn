@@ -187,7 +187,7 @@ if (form && status) {
     status.style.display = 'none';
 
     // ↓ Replace YOUR_FORM_ID with your Formspree form ID
-  const ENDPOINT = 'http://localhost:3001/api/contact-lead';
+  const ENDPOINT = 'https://pixsyn-backend-production.up.railway.app/api/contact-lead'
 
 try {
   const data = {
@@ -229,7 +229,7 @@ try {
 
 (function () {
   const ACCENT = '#000000';
-  const BACKEND = 'http://localhost:3001';
+  const BACKEND = 'https://pixsyn-backend-production.up.railway.app';
 
   // Conversation history sent to Claude
   let history = [];
