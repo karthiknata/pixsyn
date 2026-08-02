@@ -187,7 +187,7 @@ if (form && status) {
     status.style.display = 'none';
 
     // ↓ Replace YOUR_FORM_ID with your Formspree form ID
- const ENDPOINT = 'https://api.pixsyn.com/api/contact-lead';;
+ const ENDPOINT = 'https://api.pixsyn.com/api/contact-lead';
 
 try {
   const data = {
@@ -224,11 +224,12 @@ try {
   });
 }
 // ── PIXSYN AI CHATBOT ────────────────────────────────────────
-
+// Paste this at the bottom of your main.js
+// Requires pixsyn-backend running on localhost:3001
 
 (function () {
   const ACCENT = '#000000';
-  const BACKEND = 'https://api.pixsyn.com';;
+  const BACKEND = 'https://api.pixsyn.com';
 
   // Conversation history sent to Claude
   let history = [];
@@ -536,7 +537,7 @@ try {
       // Show offline message and fallback
       offline.style.display = 'block';
       addMsg("I'm having trouble connecting right now. Please use the contact form below or call us directly — we'd love to chat!");
-      console.log('Pixsyn chatbot: backend offline');
+      console.error('Pixsyn chatbot error:' err);
     }
 
     setLoading(false);
