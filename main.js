@@ -229,7 +229,7 @@ try {
 
 (function () {
   const ACCENT = '#000000';
-  const BACKEND = 'https://pixsyn-backend-production.up.railway.app';
+  const BACKEND = 'https://api.pixsyn.com';
 
   // Conversation history sent to Claude
   let history = [];
@@ -537,7 +537,7 @@ try {
       // Show offline message and fallback
       offline.style.display = 'block';
       addMsg("I'm having trouble connecting right now. Please use the contact form below or call us directly — we'd love to chat!");
-      console.log('Pixsyn chatbot: backend offline');
+      console.error('Pixsyn chatbot error:' err);
     }
 
     setLoading(false);
