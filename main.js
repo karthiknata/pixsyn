@@ -187,7 +187,7 @@ if (form && status) {
     status.style.display = 'none';
 
     // ↓ Replace YOUR_FORM_ID with your Formspree form ID
- const ENDPOINT = 'https://api.pixsyn.com/api/contact-lead';
+ const ENDPOINT = 'https://pixsyn-backend-production.up.railway.app/api/contact-lead';
 
 try {
   const data = {
@@ -229,7 +229,7 @@ try {
 
 (function () {
   const ACCENT = '#000000';
-  const BACKEND = 'https://api.pixsyn.com';
+  const BACKEND = 'https://pixsyn-backend-production.up.railway.app';
 
   // Conversation history sent to Claude
   let history = [];
@@ -537,7 +537,7 @@ try {
       // Show offline message and fallback
       offline.style.display = 'block';
       addMsg("I'm having trouble connecting right now. Please use the contact form below or call us directly — we'd love to chat!");
-      console.error('Pixsyn chatbot error:' err);
+      console.log('Pixsyn chatbot: backend offline');
     }
 
     setLoading(false);
