@@ -34,13 +34,12 @@
         </a>
 
         <ul class="nav-links" id="navLinks">
-          <li><a href="index.html#services">Services</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="index.html#process">Process</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="tools.html" aria-current="page">Pixsyn Intelligence</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -59,13 +58,12 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="index.html#services">Services</a>
+    <a href="services.html">Services</a>
     <a href="about.html">About</a>
-    <a href="index.html#process">Process</a>
-    <a href="index.html#pricing">Pricing</a>
     <a href="blog.html">Blog</a>
     <a href="tools.html">Pixsyn Intelligence</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="contact.html">Contact</a>
   </div>
 
   <main id="top">
@@ -213,13 +211,12 @@
         <p>Premium websites, SEO and AI systems.<br>Saskatchewan, Canada.</p>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
-        <a href="index.html#services">Services</a>
+        <a href="services.html">Services</a>
         <a href="about.html">About</a>
-        <a href="index.html#process">Process</a>
-        <a href="index.html#pricing">Pricing</a>
         <a href="blog.html">Blog</a>
         <a href="tools.html">Pixsyn Intelligence</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <div class="footer-copy">
         &copy; <span id="fyear"></span> Pixsyn. All rights reserved.
@@ -349,6 +346,75 @@
         tcOutput.innerHTML = `<div class="tc-result">${rows}</div>`;
       }
 
+      function findingIconClass(status) {
+        if (status === 'error') return 'ti-x';
+        if (status === 'warning') return 'ti-alert-triangle';
+        return 'ti-check';
+      }
+
+      function renderTeaserResult(data, toolSlug) {
+        const scoreHtml = (typeof data.score === 'number') ? `
+          <div class="tc-score-row">
+            <span class="tc-score">${data.score}<span class="tc-score-max">/100</span></span>
+            <span class="tc-score-label">${data.scoreLabel || ''}</span>
+          </div>` : '';
+
+        const findingsHtml = (data.visible || []).map(f => `
+          <div class="tc-finding">
+            <i class="ti ${findingIconClass(f.status)} tc-finding-icon ${f.status === 'error' ? 'error' : ''}" aria-hidden="true"></i>
+            <div>
+              <div class="tc-finding-label">${f.label}</div>
+              <div class="tc-finding-value">${f.value}</div>
+            </div>
+          </div>
+        `).join('');
+
+        const lockedCount = data.lockedCount || 0;
+
+        tcOutput.innerHTML = `
+          <div class="tc-result">${scoreHtml}${findingsHtml}</div>
+          ${lockedCount > 0 ? `
+            <div class="tc-locked-note">+ ${lockedCount} more finding${lockedCount === 1 ? '' : 's'} in the full report</div>
+            <div class="tc-unlock-panel">
+              <div class="tc-unlock-copy">
+                We ran this check once, for free. Give us your email and we'll send the
+                complete report — every finding, not just the highlights.
+              </div>
+              <form class="tc-unlock-form" id="tcUnlockForm">
+                <input type="email" id="tcUnlockEmail" placeholder="you@yourbusiness.com" required />
+                <button type="submit" class="tc-unlock-btn">Unlock Full Report</button>
+              </form>
+            </div>
+          ` : ''}
+        `;
+
+        if (lockedCount > 0) {
+          const form = document.getElementById('tcUnlockForm');
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const emailInput = document.getElementById('tcUnlockEmail');
+            const email = emailInput.value.trim();
+            if (!email) return;
+            const btn = form.querySelector('.tc-unlock-btn');
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+            try {
+              const res = await fetch(API_BASE + '/api/tools/unlock', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ tool: toolSlug, email: email, reportId: data.reportId || null })
+              });
+              if (!res.ok) throw new Error('Request failed');
+              form.outerHTML = `<div class="tc-unlock-success">Sent — check ${email} for the full report.</div>`;
+            } catch (err) {
+              btn.disabled = false;
+              btn.textContent = 'Unlock Full Report';
+              renderOffline();
+            }
+          });
+        }
+      }
+
       function renderOffline() {
         tcOutput.innerHTML = `
           <div class="tc-offline">
@@ -415,7 +481,11 @@
           });
           if (!res.ok) throw new Error('Request failed');
           const data = await res.json();
-          renderResult(data);
+          if (data && Array.isArray(data.visible)) {
+            renderTeaserResult(data, activeSlug);
+          } else {
+            renderResult(data);
+          }
         } catch (err) {
           renderOffline();
         } finally {
