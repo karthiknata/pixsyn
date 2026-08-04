@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixsyn Intelligence | SEO, Speed &amp; AI Diagnostics for Your Website</title>
+  <meta name="google-site-verification" content="Lgkf16A8EU4ek6sT0yUxnqPzHOumpGakwAijNz4ITOw" />
+  <meta name="description" content="Free diagnostic tools from Pixsyn — check your SEO, page speed, security headers, domain info, and AI visibility in seconds."/>
+  <meta name="keywords" content="free SEO tools, website speed test, security headers checker, domain checker, AI visibility checker"/>
+  <meta name="author" content="Pixsyn"/>
+  <meta property="og:title" content="Pixsyn Intelligence"/>
+  <meta property="og:description" content="Free diagnostic tools for your website — SEO, speed, security, and AI visibility, checked in seconds."/>
+  <meta property="og:url" content="https://pixsyn.com/tools.html"/>
+  <meta property="og:type" content="website"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.44.0/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.png"/>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header class="nav-wrap">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html#top" class="logo">
+           <img src="logo.png" alt="PixSyn logo" class="logo-mark">
+          <span class="logo-text">PixSyn</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#process">Process</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="tools.html" aria-current="page">Pixsyn Intelligence</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-click" id="themeToggle" type="button" aria-label="Switch to night mode">
+            <span id="themeText">☾</span>
+          </button>
+          <a href="index.html#contact" class="nav-cta">Book a Free Call</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="index.html#services">Services</a>
+    <a href="about.html">About</a>
+    <a href="index.html#process">Process</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="tools.html">Pixsyn Intelligence</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ── TOOLS HEADER ── -->
+    <section class="section hero" style="min-height:auto;">
+      <div class="hero-watermark" aria-hidden="true">PIXSYN</div>
+      <div class="container" style="position:relative; z-index:1;">
+        <div class="eyebrow">Pixsyn Intelligence</div>
+        <h1 class="section-title">RUN YOUR OWN<br>DIAGNOSTICS.</h1>
+        <p class="section-desc tools-intro">
+          Free, self-serve checks for your website and business — the same kind of
+          questions we ask on every strategy call. Pick a tool, run it, and see
+          exactly where you stand.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── ORANGE MARQUEE ── -->
+    <div class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>SEO</span><span class="mdot">✦</span>
+          <span>Speed</span><span class="mdot">✦</span>
+          <span>Security</span><span class="mdot">✦</span>
+          <span>AI Visibility</span><span class="mdot">✦</span>
+        </div>
+        <div class="marquee-group">
+          <span>SEO</span><span class="mdot">✦</span>
+          <span>Speed</span><span class="mdot">✦</span>
+          <span>Security</span><span class="mdot">✦</span>
+          <span>AI Visibility</span><span class="mdot">✦</span>
+        </div>
+        <div class="marquee-group">
+          <span>SEO</span><span class="mdot">✦</span>
+          <span>Speed</span><span class="mdot">✦</span>
+          <span>Security</span><span class="mdot">✦</span>
+          <span>AI Visibility</span><span class="mdot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TOOLS GRID + CONSOLE ── -->
+    <section class="section" style="padding-top:64px;">
+      <div class="container">
+
+        <div class="tools-grid" id="toolsGrid">
+
+          <button class="tool-card js-reveal" data-tool="seo-analyzer">
+            <div class="tool-card-top"><span></span></div>
+            <div class="tool-name-row"><i class="ti ti-search tool-icon" aria-hidden="true"></i><span class="tool-name">SEO Analyzer</span></div>
+            <div class="tool-tagline">Reads pages like Google</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="domain-checker">
+            <div class="tool-card-top"><span></span></div>
+            <div class="tool-name-row"><i class="ti ti-world tool-icon" aria-hidden="true"></i><span class="tool-name">Domain Checker</span></div>
+            <div class="tool-tagline">Registry + DNS, live</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="speed-estimator">
+            <div class="tool-card-top"><span></span></div>
+            <div class="tool-name-row"><i class="ti ti-bolt tool-icon" aria-hidden="true"></i><span class="tool-name">Speed Estimator</span></div>
+            <div class="tool-tagline">Times your visitors' wait</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="meta-tags">
+            <div class="tool-card-top"><span></span></div>
+            <div class="tool-name-row"><i class="ti ti-tag tool-icon" aria-hidden="true"></i><span class="tool-name">Meta Tag Checker</span></div>
+            <div class="tool-tagline">How links unfurl</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="security-headers">
+            <div class="tool-card-top"><span></span></div>
+            <div class="tool-name-row"><i class="ti ti-shield-lock tool-icon" aria-hidden="true"></i><span class="tool-name">Security Headers</span></div>
+            <div class="tool-tagline">Armor on your responses</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="ai-visibility">
+            <div class="tool-card-top"><span class="tool-ai-badge">AI</span></div>
+            <div class="tool-name-row"><i class="ti ti-sparkles tool-icon" aria-hidden="true"></i><span class="tool-name">AI Visibility Checker</span></div>
+            <div class="tool-tagline">Does ChatGPT know you?</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="content-generator">
+            <div class="tool-card-top"><span class="tool-ai-badge">AI</span></div>
+            <div class="tool-name-row"><i class="ti ti-pencil tool-icon" aria-hidden="true"></i><span class="tool-name">Content Generator</span></div>
+            <div class="tool-tagline">Outlines that rank</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="ai-readiness-score">
+            <div class="tool-card-top"><span class="tool-ai-badge">AI</span></div>
+            <div class="tool-name-row"><i class="ti ti-gauge tool-icon" aria-hidden="true"></i><span class="tool-name">AI Readiness Score</span></div>
+            <div class="tool-tagline">How automatable are you</div>
+          </button>
+
+          <button class="tool-card js-reveal" data-tool="workflow-analyzer">
+            <div class="tool-card-top"><span class="tool-ai-badge">AI</span></div>
+            <div class="tool-name-row"><i class="ti ti-git-branch tool-icon" aria-hidden="true"></i><span class="tool-name">Workflow Analyzer</span></div>
+            <div class="tool-tagline">Finds the bottleneck</div>
+          </button>
+
+        </div>
+
+        <!-- ── CONSOLE ── -->
+        <div class="tool-console js-reveal">
+          <div class="tc-header">
+            <div class="tc-name" id="tcName">Pick a tool above to get started</div>
+            <div class="tc-desc" id="tcDesc">Every tool runs a real check against your website or business — no signup required.</div>
+          </div>
+
+          <div class="tc-form" id="tcForm" style="display:none;">
+            <input type="text" id="tcInput" placeholder="" />
+            <button class="tc-run-btn" id="tcRunBtn">Run Tool &rarr;</button>
+          </div>
+
+          <div class="tc-output" id="tcOutput">
+            <div class="tc-empty">&larr; Select a tool to begin</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── TOOLS CTA ── -->
+    <section class="section about-cta-section">
+      <div class="container about-cta-inner">
+        <div class="eyebrow" style="justify-content:center;">Want The Full System?</div>
+        <h2 class="section-title about-cta-title">
+          THESE TOOLS FIND THE PROBLEMS.<br>WE BUILD THE FIX.
+        </h2>
+        <a href="index.html#contact" class="btn-primary about-cta-btn">Book a free strategy call &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="pix">PIX</span><span class="syn">SYN</span>
+        </div>
+        <p>Premium websites, SEO and AI systems.<br>Saskatchewan, Canada.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="tools.html">Pixsyn Intelligence</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="footer-copy">
+        &copy; <span id="fyear"></span> Pixsyn. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    (function () {
+      const API_BASE = 'https://api.pixsyn.com';
+
+      const TOOLS = {
+        'seo-analyzer': {
+          name: 'SEO Analyzer',
+          desc: 'Reads your page the way Google does — checks headings, images, structured data, and word count.',
+          endpoint: '/api/tools/seo-analyzer',
+          inputType: 'url',
+          inputKey: 'url',
+          placeholder: 'https://yourbusiness.com'
+        },
+        'domain-checker': {
+          name: 'Domain Checker',
+          desc: 'Live registry and DNS lookup — registrar, expiry date, name servers, and record configuration.',
+          endpoint: '/api/tools/domain-checker',
+          inputType: 'text',
+          inputKey: 'domain',
+          placeholder: 'yourbusiness.com'
+        },
+        'speed-estimator': {
+          name: 'Speed Estimator',
+          desc: 'Real Core Web Vitals — how long your visitors actually wait before your page is usable.',
+          endpoint: '/api/tools/speed-estimator',
+          inputType: 'url',
+          inputKey: 'url',
+          placeholder: 'https://yourbusiness.com'
+        },
+        'meta-tags': {
+          name: 'Meta Tag Checker',
+          desc: 'See exactly how your page unfurls when shared — title, description, and social preview tags.',
+          endpoint: '/api/tools/meta-tags',
+          inputType: 'url',
+          inputKey: 'url',
+          placeholder: 'https://yourbusiness.com'
+        },
+        'security-headers': {
+          name: 'Security Headers',
+          desc: 'Checks the protective headers your server sends with every response.',
+          endpoint: '/api/tools/security-headers',
+          inputType: 'url',
+          inputKey: 'url',
+          placeholder: 'https://yourbusiness.com'
+        },
+        'ai-visibility': {
+          name: 'AI Visibility Checker',
+          desc: 'Finds out whether ChatGPT and Claude actually know your business exists.',
+          endpoint: '/api/tools/ai-visibility',
+          inputType: 'text',
+          inputKey: 'businessName',
+          placeholder: 'Your business name'
+        },
+        'content-generator': {
+          name: 'Content Generator',
+          desc: 'Generates a real blog post outline for a topic your customers are already searching for.',
+          endpoint: '/api/tools/content-generator',
+          inputType: 'text',
+          inputKey: 'topic',
+          placeholder: "e.g. why my HVAC business isn't getting calls"
+        },
+        'ai-readiness-score': {
+          name: 'AI Readiness Score',
+          desc: 'Scores how much low-effort automation opportunity exists in how you currently operate.',
+          endpoint: '/api/tools/ai-readiness-score',
+          inputType: 'textarea',
+          inputKey: 'businessDescription',
+          placeholder: 'Briefly describe your business and how you currently handle leads/scheduling...'
+        },
+        'workflow-analyzer': {
+          name: 'Workflow Analyzer',
+          desc: 'Describe a manual process and find out which steps are actually worth automating.',
+          endpoint: '/api/tools/workflow-analyzer',
+          inputType: 'textarea',
+          inputKey: 'workflowDescription',
+          placeholder: 'Describe how you currently handle a task, step by step...'
+        }
+      };
+
+      const grid = document.getElementById('toolsGrid');
+      const tcName = document.getElementById('tcName');
+      const tcDesc = document.getElementById('tcDesc');
+      const tcForm = document.getElementById('tcForm');
+      const tcInput = document.getElementById('tcInput');
+      const tcRunBtn = document.getElementById('tcRunBtn');
+      const tcOutput = document.getElementById('tcOutput');
+
+      let activeSlug = null;
+
+      function humanizeKey(key) {
+        return key
+          .replace(/([A-Z])/g, ' $1')
+          .replace(/^./, s => s.toUpperCase())
+          .trim();
+      }
+
+      function renderValue(val) {
+        if (Array.isArray(val)) {
+          if (val.length === 0) return '<span class="tc-empty">None</span>';
+          return '<ul>' + val.map(v => `<li>${typeof v === 'object' ? JSON.stringify(v) : v}</li>`).join('') + '</ul>';
+        }
+        if (val && typeof val === 'object') {
+          return Object.entries(val)
+            .map(([k, v]) => `<div><strong>${humanizeKey(k)}:</strong> ${typeof v === 'object' ? JSON.stringify(v) : v}</div>`)
+            .join('');
+        }
+        if (typeof val === 'boolean') return val ? 'Yes' : 'No';
+        return String(val);
+      }
+
+      function renderResult(data) {
+        const rows = Object.entries(data)
+          .map(([key, val]) => `
+            <div class="tc-result-row">
+              <div class="tc-result-key">${humanizeKey(key)}</div>
+              <div class="tc-result-val">${renderValue(val)}</div>
+            </div>
+          `).join('');
+        tcOutput.innerHTML = `<div class="tc-result">${rows}</div>`;
+      }
+
+      function renderOffline() {
+        tcOutput.innerHTML = `
+          <div class="tc-offline">
+            ⚠️ This tool isn't connected yet — our backend for it is still being built.
+            In the meantime, <a href="index.html#contact">book a free strategy call</a>
+            and we'll walk through this by hand.
+          </div>`;
+      }
+
+      function renderLoading() {
+        tcOutput.innerHTML = `
+          <div class="tc-loading">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            Running check...
+          </div>`;
+      }
+
+      function selectTool(slug) {
+        activeSlug = slug;
+        const tool = TOOLS[slug];
+
+        [...grid.querySelectorAll('.tool-card')].forEach(c => {
+          c.classList.toggle('active', c.dataset.tool === slug);
+        });
+
+        tcName.textContent = tool.name;
+        tcDesc.textContent = tool.desc;
+        tcForm.style.display = 'flex';
+        tcOutput.innerHTML = `<div class="tc-empty">Enter a value above and hit Run.</div>`;
+
+        if (tool.inputType === 'textarea') {
+          tcForm.innerHTML = `
+            <textarea id="tcInput" placeholder="${tool.placeholder}"></textarea>
+            <button class="tc-run-btn" id="tcRunBtn">Run Tool &rarr;</button>
+          `;
+        } else {
+          tcForm.innerHTML = `
+            <input type="text" id="tcInput" placeholder="${tool.placeholder}" />
+            <button class="tc-run-btn" id="tcRunBtn">Run Tool &rarr;</button>
+          `;
+        }
+        document.getElementById('tcRunBtn').addEventListener('click', runActiveTool);
+        document.getElementById('tcInput').focus();
+
+        document.querySelector('.tool-console').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      async function runActiveTool() {
+        if (!activeSlug) return;
+        const tool = TOOLS[activeSlug];
+        const inputEl = document.getElementById('tcInput');
+        const value = inputEl.value.trim();
+        if (!value) { inputEl.focus(); return; }
+
+        const btn = document.getElementById('tcRunBtn');
+        btn.disabled = true;
+        renderLoading();
+
+        try {
+          const res = await fetch(API_BASE + tool.endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ [tool.inputKey]: value })
+          });
+          if (!res.ok) throw new Error('Request failed');
+          const data = await res.json();
+          renderResult(data);
+        } catch (err) {
+          renderOffline();
+        } finally {
+          btn.disabled = false;
+        }
+      }
+
+      grid.querySelectorAll('.tool-card').forEach(card => {
+        card.addEventListener('click', () => selectTool(card.dataset.tool));
+      });
+    })();
+  </script>
+</body>
+</html>
