@@ -141,6 +141,11 @@ body.dark-mode .nav-wrap {
   gap: 32px;
 }
 
+@media (max-width: 1250px) and (min-width: 769px) {
+  .nav-links { gap: 20px; }
+  .nav-links a { font-size: 0.72rem; }
+}
+
 .nav-links a {
   font-size: 0.8rem;
   font-weight: 500;
@@ -966,6 +971,43 @@ body.dark-mode .pricing-card.featured .pc-badge { background: #fff; color: #0053
 .footer-copy {
   font-family: var(--ff-mono); font-size: 0.65rem;
   letter-spacing: 0.1em; color: var(--muted);
+}
+
+/* ── ABOUT PAGE ──────────────────────────────────── */
+.about-hero { border-bottom: 1px solid var(--border); }
+.about-hero-body {
+  grid-template-columns: 1fr;
+  padding-top: 72px; padding-bottom: 64px;
+  max-width: 900px;
+}
+.about-title { font-size: clamp(3.2rem, 8vw, 7rem); }
+.about-hero-desc { max-width: 640px; }
+
+.story-section { }
+.story-grid {
+  display: grid; grid-template-columns: 1.4fr 0.6fr;
+  gap: 64px; align-items: start;
+}
+.story-copy p {
+  font-size: 0.97rem; color: var(--off);
+  line-height: 1.9; font-weight: 300; margin-bottom: 22px;
+}
+.story-copy p:last-child { margin-bottom: 0; }
+.story-lead {
+  font-family: var(--ff-serif); font-style: italic;
+  font-size: 1.35rem !important; color: var(--white) !important;
+  line-height: 1.6 !important; font-weight: 400 !important;
+}
+.story-side { position: sticky; top: 96px; }
+
+.about-cta-section { background: var(--navy-2); border-top: 1px solid var(--border); }
+.about-cta-inner { text-align: center; max-width: 900px; }
+.about-cta-title { text-align: center; margin: 0 auto 36px; }
+.about-cta-btn { justify-content: center; }
+
+@media (max-width: 1100px) {
+  .story-grid { grid-template-columns: 1fr; gap: 40px; }
+  .story-side { position: static; }
 }
 
 /* ── RESPONSIVE ──────────────────────────────────── */
